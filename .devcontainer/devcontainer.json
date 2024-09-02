@@ -3,7 +3,7 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:dev-20-bullseye",
 	"features": {
-		"ghcr.io/devcontainers/features/aws-cli:1": {},
+		"ghcr.io/devcontainers/features/aws-cli:1": {}
 	},
 	"customizations": {
 		"vscode": {
@@ -11,7 +11,7 @@
 				"amazonwebservices.aws-toolkit-vscode"
 			]
 		}
-	},
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -20,7 +20,7 @@
 	// "forwardPorts": [3000, 5173]
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "yarn install sst"
+	//"postCreateCommand": "yarn install sst"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
