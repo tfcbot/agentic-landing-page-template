@@ -19,7 +19,7 @@ It uses app router and tailwindcss for styling.
 
 1. Clone the repository:
    ```
-   git clone https://github.com/agentic-landing-page.git
+   git clone <repo-url>
    cd agentic-landing-page
    ```
 
