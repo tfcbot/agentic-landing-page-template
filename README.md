@@ -1,4 +1,4 @@
-# agentic-landing-page
+# agentic-landing-page-template
 
 This project is built using [SSTv3](https://sst.dev/) and [Next.js](https://nextjs.org/).
 
@@ -20,7 +20,7 @@ It uses app router and tailwindcss for styling.
 1. Clone the repository:
    ```
    git clone <repo-url>
-   cd agentic-landing-page
+   cd agentic-landing-page-template
    ```
 
 2. Initialize SST in the project
