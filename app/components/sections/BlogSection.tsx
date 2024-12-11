@@ -21,9 +21,9 @@ const SAMPLE_POSTS: BlogPost[] = [
 
 export default function BlogSection() {
   return (
-    <section className="py-20 bg-[#0A0118]">
+    <section className="py-20 bg-[var(--color-background)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">Latest from Our Blog</h2>
+        <h2 className="text-4xl font-bold text-[var(--text-primary)] mb-12 text-center">Latest from Our Blog</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {SAMPLE_POSTS.map(post => (
             <BlogCard key={post.id} post={post} />

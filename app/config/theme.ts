@@ -8,9 +8,12 @@ export type ThemeConfig = {
     primary: string;
     secondary: string;
     background: string;
+    backgroundSecondary: string;
+    backgroundHover: string;
     text: {
       primary: string;
       secondary: string;
+      tertiary: string;
     };
     gradients: {
       primary: {
@@ -28,9 +31,12 @@ export type ThemeConfig = {
       primary: string;
       secondary: string;
       background: string;
+      backgroundSecondary: string;
+      backgroundHover: string;
       text: {
         primary: string;
         secondary: string;
+        tertiary: string;
       };
       gradients: {
         primary: {
@@ -55,9 +61,12 @@ export const defaultTheme: ThemeConfig = {
     primary: '#6D28D9',    // purple-600
     secondary: '#2563EB',  // blue-600
     background: '#0A0118', // dark background
+    backgroundSecondary: 'rgba(0, 0, 0, 0.2)', // black/20
+    backgroundHover: 'rgba(0, 0, 0, 0.3)',     // black/30
     text: {
       primary: '#FFFFFF',   // white
       secondary: '#9CA3AF', // gray-400
+      tertiary: '#6B7280',  // gray-500
     },
     gradients: {
       primary: {
@@ -75,9 +84,12 @@ export const defaultTheme: ThemeConfig = {
       primary: '#8B5CF6',    // purple-500
       secondary: '#3B82F6',  // blue-500
       background: '#000000', // black
+      backgroundSecondary: 'rgba(0, 0, 0, 0.2)', // black/20
+      backgroundHover: 'rgba(0, 0, 0, 0.3)',     // black/30
       text: {
         primary: '#FFFFFF',   // white
         secondary: '#9CA3AF', // gray-400
+        tertiary: '#6B7280',  // gray-500
       },
       gradients: {
         primary: {
@@ -101,8 +113,11 @@ export function getThemeVariables(theme: ThemeConfig): Record<string, string> {
     '--color-primary': theme.colors.primary,
     '--color-secondary': theme.colors.secondary,
     '--color-background': theme.colors.background,
+    '--color-background-secondary': theme.colors.backgroundSecondary,
+    '--color-background-hover': theme.colors.backgroundHover,
     '--text-primary': theme.colors.text.primary,
     '--text-secondary': theme.colors.text.secondary,
+    '--text-tertiary': theme.colors.text.tertiary,
     '--gradient-primary-from': theme.colors.gradients.primary.from,
     '--gradient-primary-to': theme.colors.gradients.primary.to,
     '--gradient-background-from': theme.colors.gradients.background.from,

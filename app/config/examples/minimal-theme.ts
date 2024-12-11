@@ -9,9 +9,12 @@ export const minimalTheme: ThemeConfig = {
     primary: '#000000',    // Black
     secondary: '#404040',  // Dark gray
     background: '#FFFFFF', // White background
+    backgroundSecondary: 'rgba(0, 0, 0, 0.05)', // Black with low opacity
+    backgroundHover: 'rgba(0, 0, 0, 0.1)',      // Black with higher opacity hover
     text: {
       primary: '#000000',   // Black text
-      secondary: '#666666'  // Gray text
+      secondary: '#666666', // Gray text
+      tertiary: '#888888'   // Light gray text
     },
     gradients: {
       primary: {
@@ -29,9 +32,12 @@ export const minimalTheme: ThemeConfig = {
       primary: '#FFFFFF',    // White
       secondary: '#E5E5E5',  // Light gray
       background: '#000000', // Black
+      backgroundSecondary: 'rgba(255, 255, 255, 0.1)', // White with low opacity
+      backgroundHover: 'rgba(255, 255, 255, 0.15)',    // White with higher opacity hover
       text: {
         primary: '#FFFFFF',   // White
-        secondary: '#A3A3A3'  // Gray
+        secondary: '#A3A3A3', // Gray
+        tertiary: '#737373'   // Darker gray
       },
       gradients: {
         primary: {
@@ -131,5 +137,31 @@ export const minimalContent: ContentConfig = {
     title: "Start Your Project",
     subtitle: "Let's create something beautiful together",
     buttonText: "Contact Now"
+  },
+  blog: {
+    title: "Design Journal",
+    posts: [
+      {
+        id: '1',
+        title: 'The Power of White Space',
+        excerpt: 'Understanding how negative space enhances visual communication.',
+        date: 'Mar 1, 2024',
+        readTime: '4 min'
+      },
+      {
+        id: '2',
+        title: 'Typography in Minimal Design',
+        excerpt: 'Choosing and pairing fonts for maximum impact.',
+        date: 'Mar 5, 2024',
+        readTime: '6 min'
+      },
+      {
+        id: '3',
+        title: 'Color Theory Basics',
+        excerpt: 'Using a limited color palette effectively in design.',
+        date: 'Mar 8, 2024',
+        readTime: '5 min'
+      }
+    ]
   }
 };

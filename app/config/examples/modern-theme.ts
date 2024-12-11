@@ -9,9 +9,12 @@ export const modernTheme: ThemeConfig = {
     primary: '#3B82F6',    // Blue
     secondary: '#10B981',  // Teal
     background: '#0A0118', // Dark background
+    backgroundSecondary: 'rgba(0, 0, 0, 0.2)', // Black with opacity
+    backgroundHover: 'rgba(0, 0, 0, 0.3)',     // Black with opacity hover
     text: {
       primary: '#FFFFFF',   // White text
-      secondary: '#9CA3AF'  // Gray text
+      secondary: '#9CA3AF', // Gray text
+      tertiary: '#6B7280'   // Darker gray text
     },
     gradients: {
       primary: {
@@ -29,9 +32,12 @@ export const modernTheme: ThemeConfig = {
       primary: '#60A5FA',    // Lighter blue
       secondary: '#34D399',  // Lighter teal
       background: '#000000', // Black
+      backgroundSecondary: 'rgba(0, 0, 0, 0.2)', // Black with opacity
+      backgroundHover: 'rgba(0, 0, 0, 0.3)',     // Black with opacity hover
       text: {
         primary: '#FFFFFF',   // White
-        secondary: '#9CA3AF'  // Gray
+        secondary: '#9CA3AF', // Gray
+        tertiary: '#6B7280'   // Darker gray
       },
       gradients: {
         primary: {
@@ -131,5 +137,31 @@ export const modernContent: ContentConfig = {
     title: "Ready to Transform Your Development?",
     subtitle: "Join thousands of developers building better software faster",
     buttonText: "Get Started Free"
+  },
+  blog: {
+    title: "Engineering Insights",
+    posts: [
+      {
+        id: '1',
+        title: 'Optimizing Development Workflows',
+        excerpt: 'Learn how to streamline your development process with modern tools.',
+        date: 'Mar 1, 2024',
+        readTime: '5 min'
+      },
+      {
+        id: '2',
+        title: 'AI in Modern Development',
+        excerpt: 'Exploring how AI is transforming software development practices.',
+        date: 'Mar 5, 2024',
+        readTime: '7 min'
+      },
+      {
+        id: '3',
+        title: 'The Future of DevOps',
+        excerpt: 'Predictions and trends shaping the future of development operations.',
+        date: 'Mar 8, 2024',
+        readTime: '6 min'
+      }
+    ]
   }
 };

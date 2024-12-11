@@ -45,7 +45,7 @@ npx sst deploy --stage your-stage-name
 
 ### Theme Configuration
 
-The template supports easy customization of colors through the theme configuration system. To customize the colors, modify the `app/config/theme.ts` file:
+The template supports easy customization of colors and styles through a type-safe configuration system. To customize the theme, modify the `app/config/theme.ts` file:
 
 ```typescript
 // app/config/theme.ts
@@ -53,34 +53,57 @@ const theme: ThemeConfig = {
   colors: {
     primary: '#3B82F6',    // Primary brand color
     secondary: '#10B981',  // Secondary brand color
-    background: '#0A0118', // Background color
-    text: '#FFFFFF',       // Main text color
-    textSecondary: '#9CA3AF' // Secondary text color
+    background: '#0A0118', // Main background color
+    backgroundSecondary: 'rgba(0, 0, 0, 0.2)', // Secondary background (cards, etc.)
+    backgroundHover: 'rgba(0, 0, 0, 0.3)',     // Hover state background
+    text: {
+      primary: '#FFFFFF',   // Main text color
+      secondary: '#9CA3AF', // Secondary text color
+      tertiary: '#6B7280'   // Tertiary text (metadata, subtle text)
+    },
+    gradients: {
+      primary: {
+        from: '#3B82F6',
+        to: '#10B981'
+      },
+      background: {
+        from: 'rgba(59, 130, 246, 0.5)',
+        to: 'rgba(16, 185, 129, 0.5)'
+      }
+    }
+  },
+  // Optional dark mode configuration
+  darkMode: {
+    colors: {
+      // Same structure as above with dark mode colors
+    }
   }
 };
 ```
 
-The theme system automatically generates:
-- Color variations and gradients
+The theme system provides:
+- Consistent color application across components
+- Dark mode support
+- Automatic CSS variable generation
+- Type-safe color references
 - Hover and active states
-- Text colors and backgrounds
-- Border colors with opacity variants
+- Gradient variations
 
 ### Content Configuration
 
-All section content is customizable through the `app/config/content.ts` file. Here's how to customize each section:
+All section content is customizable through the `app/config/content.ts` file:
 
-#### Hero Section
+#### Section Configurations
+
 ```typescript
+// Hero Section
 hero: {
   title: "Your Main Title",
   subtitle: "Your compelling subtitle text",
   ctaText: "Your Call-to-Action"
 }
-```
 
-#### Benefits Section
-```typescript
+// Benefits Section
 benefits: {
   title: "Section Title",
   items: [
@@ -89,13 +112,10 @@ benefits: {
       description: "Benefit description",
       iconType: "efficiency" // Available: efficiency, collaboration, analytics
     }
-    // Add more benefits...
   ]
 }
-```
 
-#### Headaches Section
-```typescript
+// Headaches Section
 headaches: {
   title: "Section Title",
   items: [
@@ -103,13 +123,10 @@ headaches: {
       title: "Challenge Title",
       description: "Challenge description"
     }
-    // Add more challenges...
   ]
 }
-```
 
-#### Timeline Section
-```typescript
+// Timeline Section
 timeline: {
   title: "Section Title",
   steps: [
@@ -117,13 +134,10 @@ timeline: {
       title: "Step Title",
       description: "Step description"
     }
-    // Add more steps...
   ]
 }
-```
 
-#### FAQ Section
-```typescript
+// FAQ Section
 faq: {
   title: "Section Title",
   items: [
@@ -131,30 +145,46 @@ faq: {
       question: "FAQ Question",
       answer: "FAQ Answer"
     }
-    // Add more FAQs...
   ]
 }
-```
 
-#### CTA Section
-```typescript
+// CTA Section
 cta: {
   title: "CTA Title",
   subtitle: "CTA Subtitle",
   buttonText: "Button Text"
 }
+
+// Blog Section
+blog: {
+  title: "Latest Updates",
+  posts: [
+    {
+      id: "1",
+      title: "Blog Post Title",
+      excerpt: "Brief description of the post",
+      date: "Mar 1, 2024",
+      readTime: "5 min"
+    }
+  ]
+}
 ```
 
-### Type Safety
+### Example Configurations
 
-All configurations are TypeScript-based, providing:
-- Auto-completion in supported editors
-- Type checking for values
-- Documentation through type definitions
+Check out the example configurations in `app/config/examples/`:
+- `modern-theme.ts`: Modern SaaS theme with blue/teal colors
+- `minimal-theme.ts`: Minimal monochromatic theme
 
-For detailed type definitions, see:
-- `app/config/theme.ts` for theme types
-- `app/config/content.ts` for content types
+Both examples include:
+- Complete theme configuration with light/dark modes
+- Sample content for all sections
+- Blog section configuration
+- Responsive design considerations
+
+For detailed type definitions and more examples, see:
+- `app/config/theme.ts`
+- `app/config/content.ts`
 
 ## Note
 This is a reference implementation meant for starting a new api project. As of now there are no plans to add additional features or integrations.

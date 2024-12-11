@@ -55,6 +55,17 @@ export type CTAContent = {
   buttonText: string;
 };
 
+export type BlogContent = {
+  title: string;
+  posts: Array<{
+    id: string;
+    title: string;
+    excerpt: string;
+    date: string;
+    readTime: string;
+  }>;
+};
+
 export type ContentConfig = {
   hero: HeroContent;
   benefits: BenefitsContent;
@@ -62,6 +73,7 @@ export type ContentConfig = {
   timeline: TimelineContent;
   faq: FAQContent;
   cta: CTAContent;
+  blog: BlogContent;
 };
 
 /**
@@ -153,5 +165,31 @@ export const defaultContent: ContentConfig = {
     title: "Ready to Get Started?",
     subtitle: "Join thousands of businesses creating high-converting landing pages",
     buttonText: "Start Your Free Trial"
+  },
+  blog: {
+    title: "Latest from Our Blog",
+    posts: [
+      {
+        id: '1',
+        title: 'Getting Started with Landing Pages',
+        excerpt: 'Learn how to create effective landing pages that convert.',
+        date: 'Mar 1, 2024',
+        readTime: '5 min'
+      },
+      {
+        id: '2',
+        title: 'Optimizing Your Landing Page',
+        excerpt: 'Tips and tricks for improving your landing page performance.',
+        date: 'Mar 5, 2024',
+        readTime: '7 min'
+      },
+      {
+        id: '3',
+        title: 'The Art of Conversion',
+        excerpt: 'Understanding user psychology and how it affects landing page success.',
+        date: 'Mar 8, 2024',
+        readTime: '6 min'
+      }
+    ]
   }
 };
