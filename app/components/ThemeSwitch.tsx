@@ -24,10 +24,10 @@ export function ThemeSwitch({ children }: { children: React.ReactNode }) {
           <button
             key={theme}
             onClick={() => setCurrentTheme(theme as ThemeKey)}
-            className={`px-3 py-1 rounded ${
+            className={`px-3 py-1 rounded transition-colors ${
               currentTheme === theme
-                ? 'bg-primary text-white'
-                : 'bg-white/10 text-gray-700 hover:bg-white/20'
+                ? 'bg-[var(--color-primary)] text-[var(--text-primary)]'
+                : 'bg-white/10 hover:bg-white/20 text-[var(--text-secondary)]'
             }`}
           >
             {theme}
