@@ -8,6 +8,7 @@ import WhoFor from './components/sections/WhoFor';
 import NotFor from './components/sections/NotFor';
 import FAQ from './components/sections/FAQ';
 import CTA from './components/sections/CTA';
+import BlogSection from './components/sections/BlogSection';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Timeline />
         <WhoFor />
         <NotFor />
+        <BlogSection />
         <FAQ />
         <CTA />
       </main>
