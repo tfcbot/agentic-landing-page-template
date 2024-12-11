@@ -1,14 +1,13 @@
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Hero from './components/sections/Hero';
-import Headaches from './components/sections/Headaches';
 import Benefits from './components/sections/Benefits';
 import Timeline from './components/sections/Timeline';
 import WhoFor from './components/sections/WhoFor';
 import NotFor from './components/sections/NotFor';
 import FAQ from './components/sections/FAQ';
 import CTA from './components/sections/CTA';
-import BlogSection from './components/sections/BlogSection';
+import Pricing from './components/sections/Pricing';
 
 export default function Home() {
   return (
@@ -16,12 +15,11 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Headaches />
         <Benefits />
         <Timeline />
+        <Pricing />
         <WhoFor />
         <NotFor />
-        <BlogSection />
         <FAQ />
         <CTA />
       </main>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Pill from '../ui/Pill';
 
 export default function Hero() {
   return (
@@ -8,6 +9,9 @@ export default function Hero() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center">
+          <div className="flex justify-center mb-6">
+            <Pill />
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200 leading-tight md:leading-tight">
             Create High-Converting<br />
             Landing Pages
