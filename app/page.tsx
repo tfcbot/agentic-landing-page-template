@@ -1,27 +1,32 @@
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import Hero from './components/sections/Hero';
-import Headaches from './components/sections/Headaches';
-import Benefits from './components/sections/Benefits';
-import Timeline from './components/sections/Timeline';
+import { Hero, Headaches, Benefits, Timeline, FAQ, CTA } from './components/sections';
 import WhoFor from './components/sections/WhoFor';
 import NotFor from './components/sections/NotFor';
-import FAQ from './components/sections/FAQ';
-import CTA from './components/sections/CTA';
+import { defaultContent } from './config/content';
 
 export default function Home() {
+  const {
+    hero,
+    headaches,
+    benefits,
+    timeline,
+    faq,
+    cta
+  } = defaultContent;
+
   return (
     <>
       <Header />
       <main>
-        <Hero />
-        <Headaches />
-        <Benefits />
-        <Timeline />
+        <Hero content={hero} />
+        <Headaches content={headaches} />
+        <Benefits content={benefits} />
+        <Timeline content={timeline} />
         <WhoFor />
         <NotFor />
-        <FAQ />
-        <CTA />
+        <FAQ content={faq} />
+        <CTA content={cta} />
       </main>
       <Footer />
     </>
