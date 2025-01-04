@@ -15,6 +15,10 @@ export default $config({
     };
   },
   async run() {
+    if (!process.env.DOMAIN_NAME) {
+      throw new Error("DOMAIN_NAME environment variable is required");
+    }
+    
     const domainName = $app.stage === "prod"
       ? process.env.DOMAIN_NAME
       : `${$app.stage}.${process.env.DOMAIN_NAME}`;
