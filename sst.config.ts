@@ -21,14 +21,15 @@ export default $config({
     
     const domainName = $app.stage === "prod"
       ? process.env.DOMAIN_NAME
-      : `${$app.stage}.${process.env.DOMAIN_NAME}`;
-    const redirectDomainName = $app.stage === "prod"
-      ? `www.${process.env.DOMAIN_NAME}`
-      : `www.${$app.stage}.${process.env.DOMAIN_NAME}`;
-    const appDomainName = $app.stage === "prod"
+      : `${$app.stage}-${process.env.DOMAIN_NAME}`;
+    
+      const redirectDomainName = `www.${domainName}`
+  
+      const appDomainName = $app.stage === "prod"
       ? `app.${process.env.DOMAIN_NAME}`
       : `${$app.stage}-app.${process.env.DOMAIN_NAME}`;
-    const web = new sst.aws.Nextjs("MyWeb", {
+   
+      const web = new sst.aws.Nextjs("MyWeb", {
       domain: {
         name: domainName,
         redirects: [redirectDomainName],
