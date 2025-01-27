@@ -3,18 +3,18 @@ import { IconEfficiency, IconCollaboration, IconAnalytics } from './icons';
 export default function Benefits() {
   const benefits = [
     {
-      title: "Mobile-First Design",
-      description: "Every landing page is optimized for all devices, ensuring maximum reach and engagement",
+      title: "Productize Your Expertise",
+      description: "Break free from endless client work by turning your expertise into automated AI agents that generate revenue while you sleep.",
       icon: <IconEfficiency className="w-12 h-12 text-purple-400" />
     },
     {
-      title: "Conversion-Optimized",
-      description: "Use templates and layouts that drive results",
+      title: "Get Back Your Time",
+      description: "Skip the painful setup process and launch your self-service Agent platform in days with pre-built auth, billing, and infrastructure",
       icon: <IconCollaboration className="w-12 h-12 text-purple-400" />
     },
     {
-      title: "Fast Loading Speed",
-      description: "Lightning-fast pages that keep visitors engaged and improve your SEO ranking",
+      title: "Unlimited Growth",
+      description: "Focus on delighting customers while your AI agents handle the workload. Scale without hiring an army.",
       icon: <IconAnalytics className="w-12 h-12 text-purple-400" />
     }
   ];
@@ -23,7 +23,7 @@ export default function Benefits() {
     <section className="py-20 bg-[#0A0118]" id="benefits">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
-          Transform Your Business
+          Go From Overworked to 
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (

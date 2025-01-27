@@ -1,21 +1,17 @@
 export default function FAQ() {
   const faqs = [
     {
-      question: "What makes your landing page builder different?",
-      answer: "Our platform combines drag-and-drop simplicity with powerful conversion optimization tools, helping you create beautiful pages that convert better."
+      question: "How do I start building my AI team?",
+      answer: "Getting started is easy. Clone our templates from GitHub, customize your agents using our documentation, and deploy them to your infrastructure. Our community is here to help you every step of the way."
     },
     {
-      question: "How long does it take to create a landing page?",
-      answer: "Most users create their first landing page in under 30 minutes. Our intuitive builder and pre-built templates make the process quick and easy."
+      question: "What types of AI team members can I create?",
+      answer: "You can create any type of AI agent - from customer support and data analysis to development and strategy. Our templates provide a foundation that you can extend for your specific needs."
     },
     {
-      question: "Can I customize the design to match my brand?",
-      answer: "Yes, every element is fully customizable. Change colors, fonts, layouts, and more to perfectly match your brand identity."
+      question: "How do I manage my AI team?",
+      answer: "Our platform includes built-in tools for monitoring agent performance, managing workloads, and optimizing team coordination. You can easily track metrics, set permissions, and scale your team as needed."
     },
-    {
-      question: "How do the AI agents help with customization?",
-      answer: "Simply update the prompt in the specifications folder with your idea, and  use AI agents to customize the entire landing page, optimizing content and design for your specific needs."
-    }
   ];
 
   return (
@@ -26,7 +22,7 @@ export default function FAQ() {
       
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
-          Frequently Asked Questions
+          Building Your Team
         </h2>
         <div className="space-y-6">
           {faqs.map((faq, index) => (

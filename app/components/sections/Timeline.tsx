@@ -1,16 +1,16 @@
 export default function Timeline() {
   const steps = [
     {
-      title: "Clone from Github",
-      description: "Start with a template repository and clone it to your workspace"
+      title: "Clone & Deploy",
+      description: "Get started with our templates and deploy them to your AWS infrastructure using SST"
     },
     {
-      title: "Customize with AI Agents",
-      description: "Let AI agents help you personalize content, design, and optimize for your audience"
+      title: "Customize Your Agents",
+      description: "Add your own AI agents or customize our pre-built ones to match your business needs"
     },
     {
-      title: "Launch & Convert",
-      description: "Publish your page and start generating leads"
+      title: "Start Selling",
+      description: "Launch your self-service platform and let customers interact with your AI agents 24/7"
     }
   ];
 
@@ -18,7 +18,7 @@ export default function Timeline() {
     <section className="py-20 bg-[#0A0118]" id="how-it-works">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
-          Three Steps to Your Perfect Landing Page
+          How It Works
         </h2>
         <div className="relative">
           {/* Vertical line - hidden on mobile */}
@@ -56,12 +56,12 @@ export default function Timeline() {
 
         <div className="text-center mt-16">
           <a
-            href="#get-started"
-            className="inline-flex items-center px-8 py-3 rounded-lg text-lg font-semibold 
+            href="#pricing"
+            className="inline-flex items-center px-12 py-3 rounded-lg text-lg font-semibold 
               bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:from-purple-700 
               hover:to-blue-700 transition-all duration-200 shadow-lg shadow-purple-500/25"
           >
-            Start Free Trial
+            Get Started
           </a>
         </div>
       </div>
