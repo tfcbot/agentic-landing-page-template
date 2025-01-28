@@ -8,6 +8,7 @@ import NotFor from './components/sections/NotFor';
 import FAQ from './components/sections/FAQ';
 import CTA from './components/sections/CTA';
 import Pricing from './components/sections/Pricing';
+import PricingCalculator from './components/sections/PricingCalculator';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Benefits />
         <Timeline />
         <Pricing />
+        <PricingCalculator />
         <WhoFor />
         <NotFor />
         <FAQ />
