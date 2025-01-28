@@ -1,19 +1,23 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Pricing() {
+  const [isAnnual, setIsAnnual] = useState(true);
+
   const freePlanFeatures = [
-    "Access to all templates",
     "Host in your own AWS Account",
-    "GitHub source code",
-    "Infrastructure as code"
+    "Access to the GitHub source code",
   ];
 
   const paidPlanFeatures = [
     "ATOS Prompt Library",
     "Premium AI Coding Courses",
-    "Early Access to the Hosted Version with Credits",
+    "Onboarding Support",
+    "Dedicated Slack Channel"
   ];
+
+  const monthlyPrice = 65;
+  const annualPrice = 52; // $624/year = $52/month
 
   return (
     <section className="py-20 bg-[#0A0118] relative overflow-hidden" id="pricing">
@@ -25,6 +29,21 @@ export default function Pricing() {
         <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
           Choose Your Plan
         </h2>
+
+        {/* Billing Toggle */}
+        <div className="flex justify-center items-center space-x-3 mb-12">
+          <span className={`text-sm transition-colors duration-300 ${!isAnnual ? 'text-white' : 'text-gray-400'}`}>Monthly</span>
+          <button
+            onClick={() => setIsAnnual(!isAnnual)}
+            className="relative inline-flex h-6 w-11 items-center rounded-full bg-gradient-to-r from-purple-600 to-blue-600"
+          >
+            <span className={`inline-block h-4 w-4 transform rounded-full bg-white transition-all duration-300 ease-in-out ${isAnnual ? 'translate-x-6' : 'translate-x-1'}`} />
+          </button>
+          <span className={`text-sm transition-colors duration-300 ${isAnnual ? 'text-white' : 'text-gray-400'}`}>Annual</span>
+          <span className={`text-xs text-purple-400 transition-opacity duration-300 ${isAnnual ? 'opacity-100' : 'opacity-0'}`}>
+            Save 20%
+          </span>
+        </div>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Free Plan */}
@@ -73,8 +92,21 @@ export default function Pricing() {
               </div>
               <h3 className="text-2xl font-bold text-white text-center mb-2">Agent Entrepreneur</h3>
               <div className="text-center mb-8">
-                <span className="text-5xl font-bold text-white">$65</span>
-                <span className="text-gray-400 ml-2">/month</span>
+                <div className="relative h-16 flex items-center justify-center">
+                  <div className={`absolute transition-all duration-300 transform ${isAnnual ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    <span className="text-5xl font-bold text-white">${annualPrice}</span>
+                    <span className="text-gray-400 ml-2">/month</span>
+                  </div>
+                  <div className={`absolute transition-all duration-300 transform ${!isAnnual ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    <span className="text-5xl font-bold text-white">${monthlyPrice}</span>
+                    <span className="text-gray-400 ml-2">/month</span>
+                  </div>
+                </div>
+                <div className="h-6 relative overflow-hidden">
+                  <div className={`text-sm text-purple-400 transition-all duration-300 transform ${isAnnual ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    Billed annually at $624
+                  </div>
+                </div>
               </div>
               
               <ul className="space-y-4 mb-8">
@@ -83,7 +115,16 @@ export default function Pricing() {
                     <svg className="w-5 h-5 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    {feature}
+                    <span className={`transition-all duration-300 ${feature === "Dedicated Slack Channel" && !isAnnual ? "line-through opacity-50" : "opacity-100"}`}>
+                      {feature}
+                    </span>
+                    <div className="relative h-4 overflow-hidden inline-block ml-2">
+                      {feature === "Dedicated Slack Channel" && (
+                        <span className={`text-xs text-purple-400 absolute transition-transform duration-300 ${!isAnnual ? 'translate-y-0' : 'translate-y-8'}`}>
+                          (Annual Only)
+                        </span>
+                      )}
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -103,7 +144,7 @@ export default function Pricing() {
                   after:absolute after:inset-[-1px] after:rounded-lg after:bg-gradient-to-r 
                   after:from-purple-400/40 after:to-blue-400/40 after:animate-pulse after:-z-[1] after:blur-[2px]"
               >
-                Join Program
+                Learn More
               </a>
             </div>
           </div>

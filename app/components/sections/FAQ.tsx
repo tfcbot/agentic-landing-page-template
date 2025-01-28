@@ -2,16 +2,28 @@ export default function FAQ() {
   const faqs = [
     {
       question: "How do I start building my AI team?",
-      answer: "Getting started is easy. Clone our templates from GitHub, customize your agents using our documentation, and deploy them to your infrastructure. Our community is here to help you every step of the way."
+      answer: "Getting started is easy. Clone our templates from GitHub, customize your agents using our documentation, and deploy them to your infrastructure."
     },
     {
-      question: "What types of AI team members can I create?",
-      answer: "You can create any type of AI agent - from customer support and data analysis to development and strategy. Our templates provide a foundation that you can extend for your specific needs."
+      question: "Do I have to build the agents myself?",
+      answer: "No you can use the agents example agents as a starting point. You can also modify their prompts and code to fit your needs."
     },
     {
-      question: "How do I manage my AI team?",
-      answer: "Our platform includes built-in tools for monitoring agent performance, managing workloads, and optimizing team coordination. You can easily track metrics, set permissions, and scale your team as needed."
+      question: "How much support do I get from the commmunity?",
+      answer: "You get best effort support in the community. Annual members get a private slack channel and dedicated support to help you get started"
     },
+    {
+      question: "How much does it cost?",
+      answer: "The DIY plan is free. The annual plan is $52/month and the monthly plan is $65/month"
+    }, 
+    {
+      question: "Can I get a refund?",
+      answer: "No refunds are offered as the code is open source. You can cancel your subscription at any time. You will have access to the community until the end of your billing cycle."
+    }, 
+    {
+      question: "Do you take requests for bulding new agents?",
+      answer: "Not at this time. Although this may change in the future. If you want strategic help you can purchase dedicated support through an annual membership."
+    }
   ];
 
   return (
@@ -22,7 +34,7 @@ export default function FAQ() {
       
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
-          Building Your Team
+         FAQs
         </h2>
         <div className="space-y-6">
           {faqs.map((faq, index) => (

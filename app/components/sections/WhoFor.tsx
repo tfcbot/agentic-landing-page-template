@@ -1,16 +1,16 @@
 export default function WhoFor() {
   const idealUsers = [
     {
-      title: "AI Entrepreneurs",
-      description: "Perfect for founders building AI-powered products who need a production-ready infrastructure"
+      title: "AI Automation Agencies",
+      description: "10x your agency revenue with AI agents that work 24/7, delivering consistent results while you sleep"
     },
     {
-      title: "Development Teams",
-      description: "Ideal for teams looking to integrate AI agents into their existing workflows and processes"
+      title: "AI Consultants & Strategists",
+      description: "Become the go-to AI expert in your field by delivering enterprise-grade solutions in half the time"
     },
     {
-      title: "AI Consultants",
-      description: "Built for consultants who want to deliver custom AI solutions to multiple clients efficiently"
+        title: "AI Coaches", 
+      description: "Create premium, personalized experiences that wow your clients and command higher rates"
     }
   ];
 
@@ -22,7 +22,7 @@ export default function WhoFor() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
-          Built For AI Teams
+          Built For Technical Entrepreneurs
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {idealUsers.map((user, index) => (
