@@ -131,3 +131,6 @@ dist
 .sst/
 !.env.sst.example
 .env*
+
+# Open Next 
+.open-next/

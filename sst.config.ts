@@ -3,7 +3,7 @@
 export default $config({
   app(input) {
     return {
-      name: "landing",
+      name: "agentic-landing-page",
       removal: input?.stage === "production" ? "retain" : "remove",
       home: "aws",
       providers: {
@@ -15,19 +15,21 @@ export default $config({
     };
   },
   async run() {
-    if (!process.env.DOMAIN_NAME) {
+    if (!process.env.BASE_DOMAIN) {
       throw new Error("DOMAIN_NAME environment variable is required");
     }
     
     const domainName = $app.stage === "prod"
-      ? process.env.DOMAIN_NAME
-      : `${$app.stage}-${process.env.DOMAIN_NAME}`;
+      ? process.env.BASE_DOMAIN
+      : `${$app.stage}.${process.env.BASE_DOMAIN}`;
     
-      const redirectDomainName = `www.${domainName}`
-  
+      const redirectDomainName = $app.stage === "prod"
+      ? `www.${process.env.BASE_DOMAIN}`
+      : `www.${$app.stage}.${process.env.BASE_DOMAIN}`;
+
       const appDomainName = $app.stage === "prod"
-      ? `app.${process.env.DOMAIN_NAME}`
-      : `${$app.stage}-app.${process.env.DOMAIN_NAME}`;
+      ? `app.${process.env.BASE_DOMAIN}`
+      : `${$app.stage}-app.${process.env.BASE_DOMAIN}`;
    
       const web = new sst.aws.Nextjs("MyWeb", {
       domain: {
@@ -36,7 +38,7 @@ export default $config({
         dns: sst.cloudflare.dns({
           transform: {
             record: (record) => {
-              if (record.name === redirectDomainName) {
+              if (record.name === domainName && record.type !== "CAA") {
                 record.proxied = true;
                 record.ttl = 1;
               }
