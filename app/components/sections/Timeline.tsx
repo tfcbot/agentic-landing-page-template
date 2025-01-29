@@ -1,7 +1,7 @@
 export default function Timeline() {
   const steps = [
     {
-      title: "Define Your Audience",
+      title: "Define Your Ideal Avatar",
       description: "Tell our AI agents about your ideal customers, their pain points, and the type of content that will resonate with them."
     },
     {
@@ -9,8 +9,8 @@ export default function Timeline() {
       description: "Watch as AI agents produce targeted blog posts, social media content, and lead magnets that speak directly to your ideal customers."
     },
     {
-      title: "Attract Quality Leads",
-      description: "Build a steady stream of ideal customers as your content establishes your expertise and attracts qualified leads to your business."
+      title: "Attract Your Dream Clients",
+      description: "Build a steady stream of clients who are ready to work with you."
     }
   ];
 
