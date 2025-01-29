@@ -18,10 +18,10 @@ export default function CTA() {
           
           <div className="relative text-center">
             <h2 className="text-4xl sm:text-5xl font-medium mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-purple-200">
-              Ready to Transform Your Business?
+              Supercharge Your Business
             </h2>
             <p className="text-xl text-gray-400/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Join innovative teams already using AI agents to scale their operations and delight their customers.
+              Streamline your content creation workflow and reclaim your time freedom with AI agents that handle the heavy lifting.
             </p>
             <div className="flex justify-center">
               <a
@@ -32,7 +32,7 @@ export default function CTA() {
                   transition-all duration-300 shadow-[0_0_30px_rgba(168,85,247,0.25)]
                   overflow-hidden transform hover:scale-[1.02]"
               >
-                <span className="relative z-10">Get Started</span>
+                <span className="relative z-10">Get an Invite</span>
                 <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-600/0 via-purple-600/40 to-purple-600/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
               </a>
             </div>

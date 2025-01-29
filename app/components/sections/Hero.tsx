@@ -17,11 +17,10 @@ export default function Hero() {
             <Pill />
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-medium text-white mb-8 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80 leading-tight md:leading-tight max-w-4xl mx-auto">
-            Scale Your Agency Services <br />
-            with AI Agents
+           Your Personal Growth Team of AI Agents
           </h1>
           <p className="text-xl text-gray-400/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Deliver a modern AI experience to your clients and free yourself from high-touch fulfillment.
+            Save 20+ hours per month while our AI agents create high-converting content that builds your authority and attracts premium clients on autopilot.
           </p>
           <div className="flex justify-center">
             <a
@@ -32,7 +31,7 @@ export default function Hero() {
                 transition-all duration-300 shadow-[0_0_20px_rgba(168,85,247,0.15)]
                 overflow-hidden"
             >
-              <span className="relative z-10">Get Started</span>
+              <span className="relative z-10">Get an Invite</span>
               <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-600/0 via-purple-600/40 to-purple-600/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
             </a>
           </div>

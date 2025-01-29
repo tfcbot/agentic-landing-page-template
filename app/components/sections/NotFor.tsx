@@ -1,16 +1,16 @@
 export default function NotFor() {
   const notIdealUsers = [
     {
-      title: "Looking for a No-Code Solution",
-      description: "If you want a complete no-code solution without any development work, this might not be the right fit."
+      title: "Just Want Basic Automation",
+      description: "If you only need simple automation tools without the power of a full AI team, there are simpler solutions available."
     },
     {
-      title: "Want a Simple Chatbot",
-      description: "If you just need a basic chatbot interface, there are simpler solutions available that might better suit your needs."
+      title: "Not Ready to Delegate",
+      description: "If you prefer to handle everything manually and aren't ready to trust AI Agents, this might not be for you."
     },
     {
-      title: "Need Instant Results",
-      description: "If you're looking for instant plug-and-play AI agents without customization or infrastructure setup, consider other platforms."
+      title: "Looking for Human Employees",
+      description: "If you specifically need human employees rather than AI agents to grow your business, consider traditional hiring instead."
     }
   ];
 
