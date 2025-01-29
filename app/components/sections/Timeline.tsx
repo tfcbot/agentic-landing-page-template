@@ -1,16 +1,16 @@
 export default function Timeline() {
   const steps = [
     {
-      title: "Clone & Deploy",
-      description: "Get started with our templates and deploy them to your AWS infrastructure using SST"
+      title: "Define Your Ideal Avatar",
+      description: "Tell our AI agents about your ideal customers, their pain points, and the type of content that will resonate with them."
     },
     {
-      title: "Customize Your Agents",
-      description: "Add your own AI agents or customize our pre-built ones to match your business needs"
+      title: "Create Magnetic Content",
+      description: "Watch as AI agents produce targeted blog posts, social media content, and lead magnets that speak directly to your ideal customers."
     },
     {
-      title: "Start Selling",
-      description: "Launch your self-service platform and let customers interact with your AI agents 24/7"
+      title: "Attract Your Dream Clients",
+      description: "Build a steady stream of clients who are ready to work with you."
     }
   ];
 
@@ -25,10 +25,10 @@ export default function Timeline() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-3xl mx-auto text-center mb-20">
           <h2 className="text-3xl sm:text-4xl font-medium mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
-            How It Works
+            Your Path to Customer Attraction
           </h2>
           <p className="text-gray-400 text-lg">
-            Get started in three simple steps
+            Three steps to consistently attract your ideal customers
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function Timeline() {
               transition-all duration-300 shadow-[0_0_20px_rgba(168,85,247,0.15)]
               overflow-hidden"
           >
-            <span className="relative z-10">Get Started</span>
+            <span className="relative z-10">Get an Invite</span>
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-600/0 via-purple-600/40 to-purple-600/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
           </a>
         </div>
