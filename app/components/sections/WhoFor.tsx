@@ -1,16 +1,16 @@
 export default function WhoFor() {
   const idealUsers = [
     {
-      title: "AI Automation Agencies",
-      description: "10x your agency revenue with AI agents that work 24/7, delivering consistent results while you sleep"
+      title: "Solopreneurs",
+      description: "Get the power of a full content team without the overhead."
     },
     {
-      title: "AI Consultants & Strategists",
-      description: "Become the go-to AI expert in your field by delivering enterprise-grade solutions in half the time"
+      title: "Founders",
+      description: "Build a compelling brand identity around your products."
     },
     {
-      title: "AI Coaches", 
-      description: "Create premium, personalized experiences that wow your clients and command higher rates"
+      title: "Coaches & Consultants", 
+      description: "Attracts high-quality leads for your services with a revamped content strategy."
     }
   ];
 
@@ -25,10 +25,10 @@ export default function WhoFor() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-3xl mx-auto text-center mb-20">
           <h2 className="text-3xl sm:text-4xl font-medium mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
-            Built For Technical Entrepreneurs
+            Perfect For Modern Entrepreneurs
           </h2>
           <p className="text-gray-400 text-lg">
-            Take your expertise to the next level
+            Scale your business with an team of AI Agents
           </p>
         </div>
 

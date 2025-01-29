@@ -8,13 +8,42 @@ export function IconEfficiency({ className = "w-6 h-6" }: IconProps) {
       className={className} 
       viewBox="0 0 24 24" 
       fill="none" 
-      stroke="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <path 
-        strokeLinecap="round" 
-        strokeLinejoin="round" 
-        strokeWidth={2} 
-        d="M13 10V3L4 14h7v7l9-11h-7z"
+        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" 
+        className="stroke-current"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path 
+        d="M12 6V12L16 14" 
+        className="stroke-current"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path 
+        d="M12 16.5V17.5" 
+        className="stroke-current"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path 
+        d="M7.5 12H6.5" 
+        className="stroke-current"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path 
+        d="M17.5 12H16.5" 
+        className="stroke-current"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -26,13 +55,28 @@ export function IconCollaboration({ className = "w-6 h-6" }: IconProps) {
       className={className} 
       viewBox="0 0 24 24" 
       fill="none" 
-      stroke="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <path 
-        strokeLinecap="round" 
-        strokeLinejoin="round" 
-        strokeWidth={2} 
-        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+        d="M12 2L2 7L12 12L22 7L12 2Z" 
+        className="stroke-current"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path 
+        d="M2 17L12 22L22 17" 
+        className="stroke-current"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path 
+        d="M2 12L12 17L22 12" 
+        className="stroke-current"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -44,13 +88,35 @@ export function IconAnalytics({ className = "w-6 h-6" }: IconProps) {
       className={className} 
       viewBox="0 0 24 24" 
       fill="none" 
-      stroke="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path 
-        strokeLinecap="round" 
-        strokeLinejoin="round" 
-        strokeWidth={2} 
-        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z"
+        className="stroke-current"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12 6V12"
+        className="stroke-current"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12 12L16 16"
+        className="stroke-current"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12 12L8 16"
+        className="stroke-current"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
