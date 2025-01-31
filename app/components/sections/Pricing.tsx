@@ -18,7 +18,7 @@ export default function Pricing() {
 
   const monthlyPrice = 299;
   const annualPrice = 249; // $2,988/year = $249/month
-
+  console.log(process.env.NEXT_PUBLIC_APP_URL);
   return (
     <section className="py-32 bg-[#0A0118] relative overflow-hidden" id="pricing">
       {/* Premium background effect */}
@@ -128,7 +128,7 @@ export default function Pricing() {
 
               <div className="mt-auto">
                 <a
-                  href="https://app.agenticteamos.com/sign-in"
+                  href={process.env.NEXT_PUBLIC_APP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center px-8 py-3 rounded-xl text-sm font-medium 
