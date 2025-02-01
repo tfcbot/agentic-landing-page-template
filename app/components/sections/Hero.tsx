@@ -31,7 +31,7 @@ export default function Hero() {
                 transition-all duration-300 shadow-[0_0_20px_rgba(168,85,247,0.15)]
                 overflow-hidden"
             >
-              <span className="relative z-10">Get an Invite</span>
+              <span className="relative z-10">Start Now</span>
               <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-600/0 via-purple-600/40 to-purple-600/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
             </a>
           </div>

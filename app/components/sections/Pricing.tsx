@@ -136,7 +136,7 @@ export default function Pricing() {
                     hover:from-purple-600 hover:to-blue-600
                     transition-all duration-300 shadow-[0_0_20px_rgba(168,85,247,0.15)]"
                 >
-                  Get an Invite
+                  Start Now
                 </a>
               </div>
             </div>
