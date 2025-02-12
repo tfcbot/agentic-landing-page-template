@@ -37,12 +37,12 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-white mt-12 mb-6">4. Account Security</h2>
           <p className="text-gray-400 mb-8">
-            Access by Subscriber and Authorized Users shall be subject to the terms and conditions of these Terms of Service. Subscriber shall be responsible for maintaining the confidentiality and security of account login information and is responsible for any and all activities that occur under Subscriber's account. Subscriber must immediately notify AGENTIC TEAMOS at admin@blurware.com of any change in authorization, any unauthorized use of your account or username, or other account related security breach of which you are aware. AGENTIC TEAMOS shall not be liable for any loss or damage arising from the failure of any user to keep your password or account secure.
+            Access by Subscriber and Authorized Users shall be subject to the terms and conditions of these Terms of Service. Subscriber shall be responsible for maintaining the confidentiality and security of account login information and is responsible for any and all activities that occur under Subscriber's account. Subscriber must immediately notify AGENTIC TEAMOS at support@agenticteamos.com of any change in authorization, any unauthorized use of your account or username, or other account related security breach of which you are aware. AGENTIC TEAMOS shall not be liable for any loss or damage arising from the failure of any user to keep your password or account secure.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-12 mb-6">Contact</h2>
           <p className="text-gray-400 mb-8">
-            For any questions regarding these Terms of Service, please contact us at: admin@blurware.com
+            For any questions regarding these Terms of Service, please contact us at: support@agenticteamos.com
           </p>
         </div>
       </div>

@@ -56,7 +56,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-2xl font-bold text-white mt-12 mb-6">Contact Us</h2>
           <p className="text-gray-400 mb-8">
-            If you have any questions about this Privacy Policy, please contact us at: admin@blurware.com
+            If you have any questions about this Privacy Policy, please contact us at: support@agenticteamos.com
           </p>
         </div>
       </div>
